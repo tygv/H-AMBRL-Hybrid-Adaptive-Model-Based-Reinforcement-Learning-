@@ -23,7 +23,11 @@ H-AMBRL/
 - ✅ **Data Processing & Visualization**: Generates **plots**, **learning curves**, and **feature importance**.
 
 ## ⚡ Dataset
-The datasets contain battery parameters collected under different charging conditions:
+
+### **1. Hardware-Based Dataset**
+The hardware dataset consists of real-world battery charging data collected under different conditions.
+
+**Features included:**
 - **Voltage (V)**
 - **Current (A)**
 - **State of Charge (SoC)**
@@ -31,10 +35,17 @@ The datasets contain battery parameters collected under different charging condi
 - **Cycle Index**
 - **dV/dt**
 
-To use the datasets:
-1. Download them from the `datasets/` folder.
-2. Ensure CSV files have the required columns.
-3. Run the scripts to train and evaluate the models.
+The dataset is stored in the `datasets/` folder and is used by `hard_vs_trad_v3.py`.
+
+### **2. Online Dataset**
+For additional real-world data, we use the publicly available dataset from **Matrian**:
+🔗 **[Online Dataset](https://data.matr.io/1/projects/5c48dd2bc625d700019f3204/batches/5c86bd64fa2ede00015ddbb3)**
+
+#### **Channels Used:**
+The model is trained using the following channels:
+7, 9, 10, 11, 26, 31, 38, 39, 44, 46
+
+
 
 ## 🔧 Setup Instructions
 ### **1. Clone the Repository**
