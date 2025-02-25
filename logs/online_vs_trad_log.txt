@@ -1,0 +1,30 @@
+2025-02-11 13:47:58,850 INFO: EVENT: Start Script
+2025-02-11 13:47:58,852 INFO: Loading dataset from directory...
+2025-02-11 13:47:58,852 INFO: Processing file: 2018-09-10_oed_3_CH10.csv
+2025-02-11 13:47:59,675 INFO: Processing file: 2018-09-10_oed_3_CH11.csv
+2025-02-11 13:48:00,499 INFO: Processing file: 2018-09-10_oed_3_CH26.csv
+2025-02-11 13:48:01,285 INFO: Processing file: 2018-09-10_oed_3_CH31.csv
+2025-02-11 13:48:02,212 INFO: Processing file: 2018-09-10_oed_3_CH38.csv
+2025-02-11 13:48:03,003 INFO: Processing file: 2018-09-10_oed_3_CH39.csv
+2025-02-11 13:48:03,943 INFO: Processing file: 2018-09-10_oed_3_CH44.csv
+2025-02-11 13:48:04,790 INFO: Processing file: 2018-09-10_oed_3_CH46.csv
+2025-02-11 13:48:05,669 INFO: Processing file: 2018-09-10_oed_3_CH7.csv
+2025-02-11 13:48:06,696 INFO: Processing file: 2018-09-10_oed_3_CH9.csv
+2025-02-11 13:48:07,510 INFO: Starting hyperparam search on RandomForest...
+2025-02-11 13:54:37,743 INFO: Best RF Params: {'max_depth': 10, 'n_estimators': 50}, best RMSE=0.0099
+2025-02-11 13:54:37,746 INFO: EVENT: Start Ensemble Training
+2025-02-11 13:54:37,890 INFO: Fitting GaussianProcessRegressor on subset...
+2025-02-11 13:54:41,757 INFO: Fitting RandomForestRegressor with best hyperparams...
+2025-02-11 13:55:26,055 INFO: Fitting MLPRegressor (default or tuned)...
+2025-02-11 13:56:36,159 INFO: Updated ensemble weights: alpha_gp=0.0093, alpha_nn=0.0901, alpha_rf=0.9006
+2025-02-11 13:56:36,160 INFO: EVENT: End Ensemble Training
+2025-02-11 13:56:43,712 INFO: H-AMBRL Ensemble (val) => MAE=0.0047, RMSE=0.0095, R^2=0.9994, MAPE=42730.42%
+2025-02-11 13:58:00,277 INFO: CC => MAE=0.0500, RMSE=0.0500, R^2=0.9855, MAPE=2086918.18%
+2025-02-11 13:59:33,273 INFO: CV => MAE=0.0000, RMSE=0.0000, R^2=1.0000, MAPE=0.00%
+2025-02-11 14:01:01,096 INFO: CC-CV => MAE=0.0338, RMSE=0.0390, R^2=0.9912, MAPE=1434954.34%
+2025-02-11 14:01:20,418 INFO: Updated ensemble weights: alpha_gp=0.4646, alpha_nn=0.0082, alpha_rf=0.5272
+2025-02-11 14:01:20,815 INFO: EVENT: Start PPO Training
+2025-02-11 14:01:26,033 INFO: Updated ensemble weights: alpha_gp=0.4700, alpha_nn=0.0559, alpha_rf=0.4742
+2025-02-11 14:02:59,789 INFO: EVENT: End PPO Training
+2025-02-11 14:02:59,791 WARNING: No training reward data to plot for PPO.
+2025-02-11 14:02:59,966 INFO: Updated ensemble weights: alpha_gp=0.3350, alpha_nn=0.2796, alpha_rf=0.3854
