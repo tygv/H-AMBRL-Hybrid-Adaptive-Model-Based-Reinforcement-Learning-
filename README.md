@@ -4,16 +4,17 @@ This repository contains the implementation of **Hybrid Adaptive Model-Based Rei
 
 ## 📂 Project Structure
 ```
-H-AMBRL/
-│-- datasets/                # Battery datasets (CSV files)
-│-- scripts/                 
-│   │-- hard_vs_trad_v3.py    # Hardware-based model implementation
-│   │-- online_vs_trad_v3.py  # Online-based model implementation
-│-- logs/                    
-│   │-- hardware_log.txt      # Log file for hardware-based runs
-│   │-- online_vs_trad_log.txt # Log file for online-based runs
-│-- README.md                 # Project documentation
-│-- .gitignore                 # Ignore unnecessary files
+H-AMBRL/ 
+│-- datasets/ 				# Battery datasets (CSV files) 
+│-- scripts/
+│   │-- hard_vs_trad_v3.py 		# Hardware-based model implementation 
+│   │-- online_vs_trad_v3.py 		# Online-based model implementation 
+│-- logs/
+│   │-- hardware_log.txt 		# Log file for hardware-based runs 
+│   │-- online_vs_trad_log.txt 		# Log file for online-based runs 
+│-- images/ 				# Hardware lab setup images 
+│-- README.md 				# Project documentation 
+│-- .gitignore 				# Ignore unnecessary files
 ```
 
 ## 🚀 Features
